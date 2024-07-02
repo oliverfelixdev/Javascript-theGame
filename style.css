@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: url("Rado Gamingz.jpg");
+  background-size: cover;
+  filter: contrast(2);
+}
+
+#panel {
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  border-radius: 3px;
+  background-color: #00000000;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 8px #0000001a;
+  /* Adjust the values as needed */
+}
+
+#ptop {
+  display: flex;
+  padding: 0 30%;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  height: 63px;
+  background-color: #5e5e5e1a;
+  backdrop-filter: blur(50px);
+  /* border-bottom: .1px solid #ffffff6a; */
+  /* border-top: .1px solid #ffffff6a; */
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  gap: 1px;
+}
+
+.elem h2 {
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.box {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 2px 25px;
+  border-radius: 3px;
+  background-size: cover;
+  /* background: url("water-falls-rocky-shore-during-daytime.jpg")no-repeat; */
+}
+
+#pbtm {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: calc(100% - 63px);
+  background-color: #ffffff1a;
+  backdrop-filter: blur(10px);
+  color: #ffffffff;
+  box-shadow: 0 41px 81px rgba(0, 0, 0, 0.1);
+  /* Adjust the values as needed */
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff16;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  color: #ffff;
+  transition: all ease-in-out 0.1s;
+}
+
+.bubble:hover {
+  cursor: pointer;
+  background-color: #acacac7b;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 425px) {
+  #main {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("Rado Gamingz.jpg");
+    background-size: cover;
+    filter: contrast(2);
+  }
+
+  #panel {
+    overflow: hidden;
+    height: 91vh;
+    width: 80%;
+    border-radius: 3px;
+    background-color: #ffffff1a;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 4px 8px #0000001a;
+    /* Adjust the values as needed */
+  }
+
+  #ptop {
+    display: flex;
+    padding: 3px 0;
+    align-items: baseline;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    background-color: #5e5e5e1a;
+    backdrop-filter: blur(50px);
+    /* border-bottom: .1px solid #ffffff6a; */
+    /* border-top: .1px solid #ffffff6a; */
+  }
+
+  .elem {
+    display: flex;
+    align-items: center;
+    margin: 0 13px;
+    gap: 1px;
+  }
+
+  .elem h2 {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .box {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 2px 15px;
+    border-radius: 3px;
+    background-size: cover;
+  }
+
+  #pbtm {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 84px);
+    background-color: #ffffff1a;
+    backdrop-filter: blur(10px);
+    color: #ffffffff;
+    box-shadow: 0 41px 81px rgba(0, 0, 0, 0.1);
+  }
+
+  .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 100;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff16;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    color: #ffff;
+    transition: all ease-in-out 0.1s;
+  }
+
+  button {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -30%);
+    position: absolute;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 30px;
+    background-color: #d5d2d2c7;
+    color: #000;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+  }
+
+  button:hover {
+    background-color: #8a0004;
+    color: #fff;
+  }
+}
+
+button {
+  border-radius: 100px;
+  padding: 8px 30px;
+  background-color: #d5d2d2c7;
+  color: #000;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+button:hover {
+  background-color: #8a0004;
+  color: #fff;
+}
